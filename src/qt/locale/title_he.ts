@@ -1556,7 +1556,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[tnet]</source>
+        <source>[bchc]</source>
         <translation>[רשת-בדיקה]</translation>
     </message>
 </context>

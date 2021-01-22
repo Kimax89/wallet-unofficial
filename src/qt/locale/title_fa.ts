@@ -1502,7 +1502,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[tnet]</source>
+        <source>[bchc]</source>
         <translation>آزمایش شبکه</translation>
     </message>
 </context>

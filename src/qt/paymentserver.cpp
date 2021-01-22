@@ -75,7 +75,7 @@ std::unique_ptr<X509_STORE, X509StoreDeleter> certStore;
 //  data directory
 //
 static QString ipcServerName() {
-    QString name("TitleQt");
+    QString name("ClashicQt");
 
     // Append a simple hash of the datadir
     // Note that GetDataDir(true) returns a different path for -tnet versus

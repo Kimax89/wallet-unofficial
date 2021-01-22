@@ -604,7 +604,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[tnet]</source>
+        <source>[bchc]</source>
         <translation>[test võrk]</translation>
     </message>
 </context>

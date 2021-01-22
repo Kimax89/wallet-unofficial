@@ -407,7 +407,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[tnet]</source>
+        <source>[bchc]</source>
         <translation>[prueba_de_red]</translation>
     </message>
 </context>

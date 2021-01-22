@@ -49,7 +49,7 @@
       <string>org.clashic.BitcoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>title</string>
+        <string>clashic</string>
       </array>
     </dict>
   </array>
@@ -71,7 +71,7 @@
         <string>application/clashic-paymentrequest</string>
         <key>public.filename-extension</key>
         <array>
-          <string>titlepaymentrequest</string>
+          <string>clashicepaymentrequest</string>
         </array>
       </dict>
     </dict>

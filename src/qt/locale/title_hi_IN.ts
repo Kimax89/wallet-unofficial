@@ -371,7 +371,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[tnet]</source>
+        <source>[bchc]</source>
         <translation>[टेस्टनेट]</translation>
     </message>
 </context>

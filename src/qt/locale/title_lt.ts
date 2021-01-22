@@ -876,7 +876,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[tnet]</source>
+        <source>[bchc]</source>
         <translation>[testavimotinklas]</translation>
     </message>
 </context>

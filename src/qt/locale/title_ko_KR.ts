@@ -2026,7 +2026,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[tnet]</source>
+        <source>[bchc]</source>
         <translation>[테스트넷]</translation>
     </message>
 </context>

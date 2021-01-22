@@ -2439,7 +2439,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[tnet]</source>
+        <source>[bchc]</source>
         <translation>[测试网络]</translation>
     </message>
 </context>

@@ -712,7 +712,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[tnet]</source>
+        <source>[bchc]</source>
         <translation>[red-de-pruebas]</translation>
     </message>
 </context>

@@ -3191,8 +3191,8 @@
     <name>SplashScreen</name>
     <message>
         <location filename="../networkstyle.cpp" line="+19"/>
-        <source>[tnet]</source>
-        <translation>[tnet]</translation>
+        <source>[bchc]</source>
+        <translation>[bchc]</translation>
     </message>
 </context>
 <context>

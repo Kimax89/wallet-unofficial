@@ -1060,7 +1060,7 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>[tnet]</source>
+        <source>[bchc]</source>
         <translation>[tnets]</translation>
     </message>
 </context>

@@ -386,8 +386,8 @@ void BitcoinGUI::createActions() {
         new QAction(platformStyle->TextColorIcon(":/icons/verify"),
                     tr("&Verify message..."), this);
     verifyMessageAction->setStatusTip(
-        tr("Verify messages to ensure they were signed with specified Title "
-           "Network addresses"));
+        tr("Verify messages to ensure they were signed with specified Bitcoin "
+           "Clashic addresses"));
 
     openRPCConsoleAction =
         new QAction(platformStyle->TextColorIcon(":/icons/debugwindow"),
@@ -418,8 +418,8 @@ void BitcoinGUI::createActions() {
                     tr("&Command-line options"), this);
     showHelpMessageAction->setMenuRole(QAction::NoRole);
     showHelpMessageAction->setStatusTip(
-        tr("Show the %1 help message to get a list with possible Title "
-           "Network command-line options")
+        tr("Show the %1 help message to get a list with possible Bitcoin "
+           "Clashic command-line options")
             .arg(tr(PACKAGE_NAME)));
 
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
