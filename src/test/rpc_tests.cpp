@@ -112,7 +112,7 @@ BOOST_AUTO_TEST_CASE(rpc_togglenetwork) {
     bool netState = find_value(r.get_obj(), "networkactive").get_bool();
     BOOST_CHECK_EQUAL(netState, true);
 
-    BOOST_CHECK_NO_THROW(CallRPC("sebchcworkactive false"));
+    BOOST_CHECK_NO_THROW(CallRPC("setnetworkactive false"));
     r = CallRPC("getnetworkinfo");
     int numConnection = find_value(r.get_obj(), "connections").get_int();
     BOOST_CHECK_EQUAL(numConnection, 0);
@@ -120,7 +120,7 @@ BOOST_AUTO_TEST_CASE(rpc_togglenetwork) {
     netState = find_value(r.get_obj(), "networkactive").get_bool();
     BOOST_CHECK_EQUAL(netState, false);
 
-    BOOST_CHECK_NO_THROW(CallRPC("sebchcworkactive true"));
+    BOOST_CHECK_NO_THROW(CallRPC("setnetworkactive true"));
     r = CallRPC("getnetworkinfo");
     netState = find_value(r.get_obj(), "networkactive").get_bool();
     BOOST_CHECK_EQUAL(netState, true);

@@ -399,11 +399,11 @@ static UniValue getaddednodeinfo(const Config &config,
     return ret;
 }
 
-static UniValue gebchctotals(const Config &config,
+static UniValue getnettotals(const Config &config,
                              const JSONRPCRequest &request) {
     if (request.fHelp || request.params.size() > 0)
         throw std::runtime_error(
-            "gebchctotals\n"
+            "getnettotals\n"
             "\nReturns information about network traffic, including bytes in, "
             "bytes out,\n"
             "and current time.\n"
@@ -430,8 +430,8 @@ static UniValue gebchctotals(const Config &config,
             "  }\n"
             "}\n"
             "\nExamples:\n" +
-            HelpExampleCli("gebchctotals", "") +
-            HelpExampleRpc("gebchctotals", ""));
+            HelpExampleCli("getnettotals", "") +
+            HelpExampleRpc("getnettotals", ""));
     if (!g_connman)
         throw JSONRPCError(
             RPC_CLIENT_P2P_DISABLED,
@@ -721,11 +721,11 @@ static UniValue clearbanned(const Config &config,
     return NullUniValue;
 }
 
-static UniValue sebchcworkactive(const Config &config,
+static UniValue setnetworkactive(const Config &config,
                                  const JSONRPCRequest &request) {
     if (request.fHelp || request.params.size() != 1) {
         throw std::runtime_error(
-            "sebchcworkactive true|false\n"
+            "setnetworkactive true|false\n"
             "\nDisable/enable all p2p network activity.\n"
             "\nArguments:\n"
             "1. \"state\"        (boolean, required) true to "
@@ -753,12 +753,12 @@ static const CRPCCommand commands[] = {
     { "network",            "addnode",                addnode,                true,  {"node","command"} },
     { "network",            "disconnectnode",         disconnectnode,         true,  {"address", "nodeid"} },
     { "network",            "getaddednodeinfo",       getaddednodeinfo,       true,  {"node"} },
-    { "network",            "gebchctotals",           gebchctotals,           true,  {} },
+    { "network",            "getnettotals",           getnettotals,           true,  {} },
     { "network",            "getnetworkinfo",         getnetworkinfo,         true,  {} },
     { "network",            "setban",                 setban,                 true,  {"subnet", "command", "bantime", "absolute"} },
     { "network",            "listbanned",             listbanned,             true,  {} },
     { "network",            "clearbanned",            clearbanned,            true,  {} },
-    { "network",            "sebchcworkactive",       sebchcworkactive,       true,  {"state"} },
+    { "network",            "setnetworkactive",       setnetworkactive,       true,  {"state"} },
 };
 // clang-format on
 

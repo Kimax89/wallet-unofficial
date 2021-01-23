@@ -510,7 +510,7 @@ git merge commit are mentioned.
 - #5574 `755b4ba` Expose GUI labels in RPC as comments (Luke-Jr)
 - #6990 `dbd2c13` http: speed up shutdown (Wladimir J. van der Laan)
 - #7013 `36baa9f` Remove LOCK(cs_main) from decodescript (Peter Todd)
-- #6999 `972bf9c` add (max)uploadtarget infos to gebchctotals RPC help (Jonas Schnelli)
+- #6999 `972bf9c` add (max)uploadtarget infos to getnettotals RPC help (Jonas Schnelli)
 - #7011 `31de241` Add mediantime to getblockchaininfo (Peter Todd)
 - #7065 `f91e29f` http: add Boost 1.49 compatibility (Wladimir J. van der Laan)
 - #7087 `be281d8` [Net]Add -enforcenodebloom option (Patrick Strateman)
