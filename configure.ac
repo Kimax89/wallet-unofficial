@@ -10,7 +10,7 @@ define(_COPYRIGHT_HOLDERS,[The %s developers])
 define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Bitcoin]])
 AC_INIT([Bitcoin Clashic],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/Bitcoin-Clashic/wallet-official/issues],[bitcoin-clashic],[https://bitcoin.clashic.cash/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
-AC_CONFIG_HEADERS([src/config.h])
+AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
@@ -22,9 +22,9 @@ CLASHIC_SEEDER_NAME=clashic-seeder
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef CONFIG_H])
-AH_TOP([#define CONFIG_H])
-AH_BOTTOM([#endif // CONFIG_H])
+AH_TOP([#ifndef BITCOIN_BITCOIN_CONFIG_H])
+AH_TOP([#define BITCOIN_BITCOIN_CONFIG_H])
+AH_BOTTOM([#endif // BITCOIN_BITCOIN_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME

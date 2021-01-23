@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef CONFIG_H
-#define CONFIG_H
+#ifndef BITCOIN_CONFIG_H
+#define BITCOIN_CONFIG_H
 
 #include <boost/noncopyable.hpp>
 
