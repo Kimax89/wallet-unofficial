@@ -31,8 +31,8 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle)
     // set reference point, paddings
     int paddingRight = 50;
     int paddingTop = 50;
-    int clashicVersionVSpace = 17;
-    int clashicCopyrightVSpace = 40;
+    int titleVersionVSpace = 17;
+    int titleCopyrightVSpace = 40;
 
     float fontFactor = 1.0;
     float devicePixelRatio = 1.0;
@@ -102,18 +102,18 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle)
     int versionTextWidth = fm.width(versionText);
     if (versionTextWidth > titleTextWidth + paddingRight - 10) {
         pixPaint.setFont(QFont(font, 10 * fontFactor));
-        clashicVersionVSpace -= 5;
+        titleVersionVSpace -= 5;
     }
     pixPaint.drawText(pixmap.width() / devicePixelRatio - titleTextWidth -
                           paddingRight + 2,
-                      paddingTop + clashicVersionVSpace, versionText);
+                      paddingTop + titleVersionVSpace, versionText);
 
     // draw copyright stuff
     {
         pixPaint.setFont(QFont(font, 10 * fontFactor));
         const int x =
             pixmap.width() / devicePixelRatio - titleTextWidth - paddingRight;
-        const int y = paddingTop + clashicCopyrightVSpace;
+        const int y = paddingTop + titleCopyrightVSpace;
         QRect copyrightRect(x, y, pixmap.width() - x - paddingRight,
                             pixmap.height() - y);
         pixPaint.drawText(copyrightRect,
