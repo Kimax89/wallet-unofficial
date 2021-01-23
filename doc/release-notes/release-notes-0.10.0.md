@@ -361,13 +361,13 @@ RPC:
 - `733177e` Remove size limit in RPC client, keep it in server
 - `6b5b7cb` Categorize rpc help overview
 - `6f2c26a` Closely track mempool byte total. Add "getmempoolinfo" RPC
-- `aa82795` Add detailed network info to gebchcworkinfo RPC
+- `aa82795` Add detailed network info to getnetworkinfo RPC
 - `01094bd` Don't reveal whether password is <20 or >20 characters in RPC
 - `57153d4` rpc: Compute number of confirmations of a block from block height
-- `ff36cbe` gebchcworkinfo: export local node's client sub-version string
+- `ff36cbe` getnetworkinfo: export local node's client sub-version string
 - `d14d7de` SanitizeString: allow '(' and ')'
 - `31d6390` Fixed setaccount accepting foreign address
-- `b5ec5fe` update gebchcworkinfo help with subversion
+- `b5ec5fe` update getnetworkinfo help with subversion
 - `ad6e601` RPC additions after headers-first
 - `33dfbf5` rpc: Fix leveldb iterator leak, and flush before `gettxoutsetinfo`
 - `2aa6329` Enable customising node policy for datacarrier data size with a -datacarriersize option

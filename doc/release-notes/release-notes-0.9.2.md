@@ -66,8 +66,8 @@ The OpenSSL dependency in the gitian builds has been upgraded to 1.0.1h because 
 
 RPC:
 
-- Add `getwalletinfo`, `getblockchaininfo` and `gebchcworkinfo` calls (will replace hodge-podge `getinfo` at some point)
-- Add a `relayfee` field to `gebchcworkinfo`
+- Add `getwalletinfo`, `getblockchaininfo` and `getnetworkinfo` calls (will replace hodge-podge `getinfo` at some point)
+- Add a `relayfee` field to `getnetworkinfo`
 - Fix RPC related shutdown hangs and leaks
 - Always show syncnode in `getpeerinfo`
 - `sendrawtransaction`: report the reject code and reason, and make it possible to re-send transactions that are already in the mempool

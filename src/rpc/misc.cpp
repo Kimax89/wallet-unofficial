@@ -34,7 +34,7 @@
  *
  * Based on the source of the information, new information should be added to:
  * - `getblockchaininfo`,
- * - `gebchcworkinfo` or
+ * - `getnetworkinfo` or
  * - `getwalletinfo`
  *
  * Or alternatively, create a specific query method for the information.

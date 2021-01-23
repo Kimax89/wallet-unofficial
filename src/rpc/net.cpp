@@ -479,11 +479,11 @@ static UniValue GetNetworksInfo() {
     return networks;
 }
 
-static UniValue gebchcworkinfo(const Config &config,
+static UniValue getnetworkinfo(const Config &config,
                                const JSONRPCRequest &request) {
     if (request.fHelp || request.params.size() != 0)
         throw std::runtime_error(
-            "gebchcworkinfo\n"
+            "getnetworkinfo\n"
             "Returns an object containing various state info regarding P2P "
             "networking.\n"
             "\nResult:\n"
@@ -543,8 +543,8 @@ static UniValue gebchcworkinfo(const Config &config,
                             "(string) any network warnings\n"
                             "}\n"
                             "\nExamples:\n" +
-            HelpExampleCli("gebchcworkinfo", "") +
-            HelpExampleRpc("gebchcworkinfo", ""));
+            HelpExampleCli("getnetworkinfo", "") +
+            HelpExampleRpc("getnetworkinfo", ""));
 
     LOCK(cs_main);
     UniValue obj(UniValue::VOBJ);
@@ -754,7 +754,7 @@ static const CRPCCommand commands[] = {
     { "network",            "disconnectnode",         disconnectnode,         true,  {"address", "nodeid"} },
     { "network",            "getaddednodeinfo",       getaddednodeinfo,       true,  {"node"} },
     { "network",            "gebchctotals",           gebchctotals,           true,  {} },
-    { "network",            "gebchcworkinfo",         gebchcworkinfo,         true,  {} },
+    { "network",            "getnetworkinfo",         getnetworkinfo,         true,  {} },
     { "network",            "setban",                 setban,                 true,  {"subnet", "command", "bantime", "absolute"} },
     { "network",            "listbanned",             listbanned,             true,  {} },
     { "network",            "clearbanned",            clearbanned,            true,  {} },

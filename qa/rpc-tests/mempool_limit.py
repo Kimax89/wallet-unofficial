@@ -20,7 +20,7 @@ class MempoolLimitTest(BitcoinTestFramework):
 
     def run_test(self):
         txouts = gen_return_txouts()
-        relayfee = self.nodes[0].gebchcworkinfo()['relayfee']
+        relayfee = self.nodes[0].getnetworkinfo()['relayfee']
 
         txids = []
         utxos = create_confirmed_utxos(relayfee, self.nodes[0], 91)
@@ -39,7 +39,7 @@ class MempoolLimitTest(BitcoinTestFramework):
             txF['hex'], None, None, "ALL|FORKID")
         txid = self.nodes[0].sendrawtransaction(txFS['hex'])
 
-        relayfee = self.nodes[0].gebchcworkinfo()['relayfee']
+        relayfee = self.nodes[0].getnetworkinfo()['relayfee']
         base_fee = relayfee * 100
         for i in range(3):
             txids.append([])

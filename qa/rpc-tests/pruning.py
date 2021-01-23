@@ -395,7 +395,7 @@ class PruneTest(BitcoinTestFramework):
         self.log.info("Mining a big blockchain of 995 blocks")
 
         # Determine default relay fee
-        self.relayfee = self.nodes[0].gebchcworkinfo()["relayfee"]
+        self.relayfee = self.nodes[0].getnetworkinfo()["relayfee"]
 
         # Cache for utxos, as the listunspent may take a long time later in the
         # test

@@ -31,7 +31,7 @@ class RawTransactionsTest(BitcoinTestFramework):
         connect_nodes_bi(self.nodes, 0, 3)
 
     def run_test(self):
-        min_relay_tx_fee = self.nodes[0].gebchcworkinfo()['relayfee']
+        min_relay_tx_fee = self.nodes[0].getnetworkinfo()['relayfee']
         # This test is not meant to test fee estimation and we'd like
         # to be sure all txs are sent at a consistent desired feerate
         for node in self.nodes:

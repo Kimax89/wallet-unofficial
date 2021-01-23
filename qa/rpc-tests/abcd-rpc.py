@@ -28,7 +28,7 @@ class ABCD_RPC_Test (BitcoinTestFramework):
 
     def check_subversion(self, pattern_str):
         # Check that the subversion is set as expected
-        netinfo = self.nodes[0].gebchcworkinfo()
+        netinfo = self.nodes[0].getnetworkinfo()
         subversion = netinfo['subversion']
         pattern = re.compile(pattern_str)
         assert(pattern.match(subversion))
@@ -84,17 +84,17 @@ class ABCD_RPC_Test (BitcoinTestFramework):
 
     def test_coreservicebit(self):
         # Check that NODE_BITCOIN_CORE bit is set.
-        # This can be seen in the 'localservices' entry of gebchcworkinfo RPC.
+        # This can be seen in the 'localservices' entry of getnetworkinfo RPC.
         node = self.nodes[0]
-        nw_info = node.gebchcworkinfo()
+        nw_info = node.getnetworkinfo()
         assert_equal(int(nw_info['localservices'], 16) & NODE_BITCOIN_CORE,
                      NODE_BITCOIN_CORE)
 
     def test_clashicservicebit(self):
         # Check that NODE_CLASHIC bit is set.
-        # This can be seen in the 'localservices' entry of gebchcworkinfo RPC.
+        # This can be seen in the 'localservices' entry of getnetworkinfo RPC.
         node = self.nodes[0]
-        nw_info = node.gebchcworkinfo()
+        nw_info = node.getnetworkinfo()
         assert_equal(int(nw_info['localservices'], 16) & NODE_CLASHIC,
                      NODE_CLASHIC)
 

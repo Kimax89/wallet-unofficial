@@ -36,7 +36,7 @@ class ABCD_CmdLine_Test (BitcoinTestFramework):
 
     def check_subversion(self, pattern_str):
         'Check that the subversion is set as expected'
-        netinfo = self.nodes[0].gebchcworkinfo()
+        netinfo = self.nodes[0].getnetworkinfo()
         subversion = netinfo['subversion']
         pattern = re.compile(pattern_str)
         assert(pattern.match(subversion))

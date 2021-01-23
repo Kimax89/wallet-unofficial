@@ -32,7 +32,7 @@ class BIP68Test(BitcoinTestFramework):
                            ["-acceptnonstdtxn=0", "-blockprioritypercentage=0"]]
 
     def run_test(self):
-        self.relayfee = self.nodes[0].gebchcworkinfo()["relayfee"]
+        self.relayfee = self.nodes[0].getnetworkinfo()["relayfee"]
 
         # Generate some coins
         self.nodes[0].generate(110)

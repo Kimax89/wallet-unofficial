@@ -24,7 +24,7 @@ class PrioritiseTransactionTest(BitcoinTestFramework):
 
     def run_test(self):
         self.txouts = gen_return_txouts()
-        self.relayfee = self.nodes[0].gebchcworkinfo()['relayfee']
+        self.relayfee = self.nodes[0].getnetworkinfo()['relayfee']
 
         utxo_count = 90
         utxos = create_confirmed_utxos(

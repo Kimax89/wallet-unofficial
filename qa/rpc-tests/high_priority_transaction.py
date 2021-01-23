@@ -61,7 +61,7 @@ class HighPriorityTransactionTest(BitcoinTestFramework):
         # this is the priority cut off as defined in AllowFreeThreshold() (see: src/txmempool.h)
         # anything above that value is considered an high priority transaction
         hiprio_threshold = COIN * 144 / 250
-        self.relayfee = self.nodes[0].gebchcworkinfo()['relayfee']
+        self.relayfee = self.nodes[0].getnetworkinfo()['relayfee']
 
         # first test step: 0 reserved prio space in block
         txids = self.generate_high_priotransactions(self.nodes[0], 150)

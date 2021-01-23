@@ -187,14 +187,14 @@ class ProxyTest(BitcoinTestFramework):
                 r[x['name']] = x
             return r
 
-        # test RPC gebchcworkinfo
-        n0 = networks_dict(self.nodes[0].gebchcworkinfo())
+        # test RPC getnetworkinfo
+        n0 = networks_dict(self.nodes[0].getnetworkinfo())
         for net in ['ipv4', 'ipv6', 'onion']:
             assert_equal(n0[net]['proxy'], '%s:%i' % (self.conf1.addr))
             assert_equal(n0[net]['proxy_randomize_credentials'], True)
         assert_equal(n0['onion']['reachable'], True)
 
-        n1 = networks_dict(self.nodes[1].gebchcworkinfo())
+        n1 = networks_dict(self.nodes[1].getnetworkinfo())
         for net in ['ipv4', 'ipv6']:
             assert_equal(n1[net]['proxy'], '%s:%i' % (self.conf1.addr))
             assert_equal(n1[net]['proxy_randomize_credentials'], False)
@@ -202,14 +202,14 @@ class ProxyTest(BitcoinTestFramework):
         assert_equal(n1['onion']['proxy_randomize_credentials'], False)
         assert_equal(n1['onion']['reachable'], True)
 
-        n2 = networks_dict(self.nodes[2].gebchcworkinfo())
+        n2 = networks_dict(self.nodes[2].getnetworkinfo())
         for net in ['ipv4', 'ipv6', 'onion']:
             assert_equal(n2[net]['proxy'], '%s:%i' % (self.conf2.addr))
             assert_equal(n2[net]['proxy_randomize_credentials'], True)
         assert_equal(n2['onion']['reachable'], True)
 
         if self.have_ipv6:
-            n3 = networks_dict(self.nodes[3].gebchcworkinfo())
+            n3 = networks_dict(self.nodes[3].getnetworkinfo())
             for net in ['ipv4', 'ipv6']:
                 assert_equal(n3[net]['proxy'], '[%s]:%i' % (self.conf3.addr))
                 assert_equal(n3[net]['proxy_randomize_credentials'], False)

@@ -80,11 +80,11 @@ static UniValue GetNetworkHashPS(int lookup, int height) {
     return workDiff.getdouble() / timeDiff;
 }
 
-static UniValue gebchcworkhashps(const Config &config,
+static UniValue getnetworkhashps(const Config &config,
                                  const JSONRPCRequest &request) {
     if (request.fHelp || request.params.size() > 2) {
         throw std::runtime_error(
-            "gebchcworkhashps ( nblocks height )\n"
+            "getnetworkhashps ( nblocks height )\n"
             "\nReturns the estimated network hashes per second based on the "
             "last n blocks.\n"
             "Pass in [blocks] to override # of blocks, -1 specifies since last "
@@ -99,8 +99,8 @@ static UniValue gebchcworkhashps(const Config &config,
             "\nResult:\n"
             "x             (numeric) Hashes per second estimated\n"
             "\nExamples:\n" +
-            HelpExampleCli("gebchcworkhashps", "") +
-            HelpExampleRpc("gebchcworkhashps", ""));
+            HelpExampleCli("getnetworkhashps", "") +
+            HelpExampleRpc("getnetworkhashps", ""));
     }
 
     LOCK(cs_main);
@@ -292,7 +292,7 @@ static UniValue getmininginfo(const Config &config,
                        uint8_t(GetArg("-blockprioritypercentage",
                                       DEFAULT_BLOCK_PRIORITY_PERCENTAGE))));
     obj.push_back(Pair("errors", GetWarnings("statusbar")));
-    obj.push_back(Pair("networkhashps", gebchcworkhashps(config, request)));
+    obj.push_back(Pair("networkhashps", getnetworkhashps(config, request)));
     obj.push_back(Pair("pooledtx", uint64_t(mempool.size())));
     obj.push_back(Pair("chain", Params().NetworkIDString()));
     return obj;
@@ -1075,7 +1075,7 @@ static UniValue estimatesmartpriority(const Config &config,
 static const CRPCCommand commands[] = {
     //  category   name                     actor (function)       okSafeMode
     //  ---------- ------------------------ ---------------------- ----------
-    {"mining",     "gebchcworkhashps",      gebchcworkhashps,      true, {"nblocks", "height"}},
+    {"mining",     "getnetworkhashps",      getnetworkhashps,      true, {"nblocks", "height"}},
     {"mining",     "getmininginfo",         getmininginfo,         true, {}},
     {"mining",     "prioritisetransaction", prioritisetransaction, true, {"txid", "priority_delta", "fee_delta"}},
     {"mining",     "getblocktemplate",      getblocktemplate,      true, {"template_request"}},

@@ -176,7 +176,7 @@ class ImportRescanTest(BitcoinTestFramework):
                 variant.check()
 
         # Create new transactions sending to each address.
-        fee = self.nodes[0].gebchcworkinfo()["relayfee"]
+        fee = self.nodes[0].getnetworkinfo()["relayfee"]
         for i, variant in enumerate(IMPORT_VARIANTS):
             variant.sent_amount = 10 - (2 * i + 1) / 8.0
             variant.sent_txid = self.nodes[0].sendtoaddress(

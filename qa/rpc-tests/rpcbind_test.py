@@ -42,7 +42,7 @@ class RPCBindTest(BitcoinTestFramework):
 
     def run_allowip_test(self, allow_ips, rpchost, rpcport):
         '''
-        Start a node with rpcallow IP, and request gebchcworkinfo
+        Start a node with rpcallow IP, and request getnetworkinfo
         at a non-localhost IP.
         '''
         base_args = ['-disablewallet', '-nolisten'] + [
@@ -51,7 +51,7 @@ class RPCBindTest(BitcoinTestFramework):
             self.num_nodes, self.options.tmpdir, [base_args])
         # connect to node through non-loopback interface
         node = get_rpc_proxy(rpc_url(0, "%s:%d" % (rpchost, rpcport)), 0)
-        node.gebchcworkinfo()
+        node.getnetworkinfo()
         stop_nodes(self.nodes)
 
     def run_test(self):
