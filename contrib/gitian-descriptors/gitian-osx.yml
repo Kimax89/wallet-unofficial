@@ -28,7 +28,7 @@ packages:
 - "python-setuptools"
 - "fonts-tuffy"
 remotes:
-- "url": "https://github.com/Bitcoin-Clashic/wallet-official.git"
+- "url": "https://github.com/Kimax89/wallet-unofficial.git"
   "dir": "bitcoin-clashic"
   "commit": ""
 files:

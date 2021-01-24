@@ -2,7 +2,7 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Bitcoin Clashic
 Upstream-Contact: Clashicly <clashicly@gmail.com>
  irc://#bitcoinclashic@freenode.net
-Source: https://github.com/Bitcoin-Clashic/wallet-official
+Source: https://github.com/Kimax89/wallet-unofficial
 
 Files: *
 Copyright: 2009-2017, Bitcoin Core Developers, 2017 Bitcoin Developers,

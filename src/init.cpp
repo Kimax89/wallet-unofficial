@@ -858,7 +858,7 @@ std::string HelpMessage(HelpMessageMode mode) {
 
 std::string LicenseInfo() {
     const std::string URL_SOURCE_CODE =
-        "<https://github.com/Bitcoin-Clashic/wallet-official>";
+        "<https://github.com/Kimax89/wallet-unofficial>";
     const std::string URL_WEBSITE = "<https://bitcoin.clashic.cash/>";
 
     return CopyrightHolders(

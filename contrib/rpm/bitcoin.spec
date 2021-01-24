@@ -21,21 +21,21 @@ Summary:	Peer to Peer Cryptographic Currency
 Group:		Applications/System
 License:	MIT
 URL:		https://bitcoin.clashic.cash/
-Source0:	https://github.com/Bitcoin-Clashic/wallet-official/releases/download/v%{version}/bitcoin-clashic-%{version}.tar.gz
+Source0:	https://github.com/Kimax89/wallet-unofficial/releases/download/v%{version}/bitcoin-clashic-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
-Source10:	https://raw.githubusercontent.com/Bitcoin-Clashic/wallet-official/v%{version}/contrib/debian/examples/clashic.conf
+Source10:	https://raw.githubusercontent.com/Kimax89/wallet-unofficial/v%{version}/contrib/debian/examples/clashic.conf
 
 #man pages
-Source20:	https://raw.githubusercontent.com/Bitcoin-Clashic/wallet-official/v%{version}/doc/man/clashicd.1
-Source21:	https://raw.githubusercontent.com/Bitcoin-Clashic/wallet-official/v%{version}/doc/man/clashic-cli.1
-Source22:	https://raw.githubusercontent.com/Bitcoin-Clashic/wallet-official/v%{version}/doc/man/clashic-qt.1
+Source20:	https://raw.githubusercontent.com/Kimax89/wallet-unofficial/v%{version}/doc/man/clashicd.1
+Source21:	https://raw.githubusercontent.com/Kimax89/wallet-unofficial/v%{version}/doc/man/clashic-cli.1
+Source22:	https://raw.githubusercontent.com/Kimax89/wallet-unofficial/v%{version}/doc/man/clashic-qt.1
 
 #selinux
-Source30:	https://raw.githubusercontent.com/Bitcoin-Clashic/wallet-official/v%{version}/contrib/rpm/bitcoin.te
+Source30:	https://raw.githubusercontent.com/Kimax89/wallet-unofficial/v%{version}/contrib/rpm/bitcoin.te
 # Source31 - what about clashic-tx and bench_clashic ???
-Source31:	https://raw.githubusercontent.com/Bitcoin-Clashic/wallet-official/v%{version}/contrib/rpm/bitcoin.fc
-Source32:	https://raw.githubusercontent.com/Bitcoin-Clashic/wallet-official/v%{version}/contrib/rpm/bitcoin.if
+Source31:	https://raw.githubusercontent.com/Kimax89/wallet-unofficial/v%{version}/contrib/rpm/bitcoin.fc
+Source32:	https://raw.githubusercontent.com/Kimax89/wallet-unofficial/v%{version}/contrib/rpm/bitcoin.if
 
 Source100:	https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg
 

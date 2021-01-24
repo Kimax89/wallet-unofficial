@@ -31,7 +31,7 @@ alternatives:
 - "package" : "x86_64-w64-mingw32-g++"
   "path" : "/usr/bin/x86_64-w64-mingw32-g++-posix"
 remotes:
-- "url": "https://github.com/Bitcoin-Clashic/wallet-official.git"
+- "url": "https://github.com/Kimax89/wallet-unofficial.git"
   "dir": "bitcoin-clashic"
   "commit": ""
 files: []

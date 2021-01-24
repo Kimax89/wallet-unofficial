@@ -29,7 +29,7 @@ Build Bitcoin Clashic
 
 1. Clone the Bitcoin Clashic source code and cd into `bitcoin-clashic`
 
-        git clone github.com/Bitcoin-Clashic/wallet-official
+        git clone github.com/Kimax89/wallet-unofficial
         cd bitcoin-clashic
 
 2.  Build bitcoin-clashic:

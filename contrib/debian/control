@@ -24,8 +24,8 @@ Build-Depends: debhelper,
  python
 Standards-Version: 3.9.2
 Homepage: https://bitcoin.clashic.cash/
-Vcs-Git: git://github.com/Bitcoin-Clashic/wallet-official.git
-Vcs-Browser: https://github.com/Bitcoin-Clashic/wallet-official
+Vcs-Git: git://github.com/Kimax89/wallet-unofficial.git
+Vcs-Browser: https://github.com/Kimax89/wallet-unofficial
 
 Package: clashicd
 Architecture: any

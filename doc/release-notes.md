@@ -1,6 +1,6 @@
 Bitcoin Clashic version 08.0 is now available from:
 
-  <https://github.com/Bitcoin-Clashic/wallet-official/releases/tag/v0.18.0>
+  <https://github.com/Kimax89/wallet-unofficial/releases/tag/v0.18.0>
 
 This release includes the following features and fixes:
 - Blake2b PoW change from sha256

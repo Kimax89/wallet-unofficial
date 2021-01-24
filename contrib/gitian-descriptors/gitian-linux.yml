@@ -34,7 +34,7 @@ packages:
 - "libc6-dev:i386"
 - "libstdc++6:i386"
 remotes:
-- "url": "https://github.com/Bitcoin-Clashic/wallet-official.git"
+- "url": "https://github.com/Kimax89/wallet-unofficial.git"
   "dir": "bitcoin-clashic"
 files: []
 script: |

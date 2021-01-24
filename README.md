@@ -43,8 +43,8 @@ for more information or see https://opensource.org/licenses/MIT.
 Development Process
 -------------------
 
-Bitcoin Clashic client development takes place at https://github.com/Bitcoin-Clashic/wallet-official
+Bitcoin Clashic client development takes place at https://github.com/Kimax89/wallet-unofficial
 
 You can clone the active development version from here:
 
-    https://github.com/Bitcoin-Clashic/wallet-official.git
+    https://github.com/Kimax89/wallet-unofficial.git
